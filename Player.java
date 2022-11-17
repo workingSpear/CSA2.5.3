@@ -10,22 +10,44 @@ public class Player
   /* your code here - attributes */
   private String name = ""; 
   private double points;
- 
-   public String getName()
+
+  /*
+   * Precondition:
+   * name has been initalized and populated
+   * 
+   * Sends name to accesor
+   */
+  public String getName()
   {
      return name;
   }
- 
+ /*
+   * Precondition:
+   * name has been initialized
+   * 
+   * Sets name to x
+   */
    public void setName(String x)
   {
     name = x;
   }
-  
+  /*
+   * Precondition:
+   * Points has been initialized and populated
+   * 
+   * Sends points to accesor
+   */
   public double getPoints()
   {
     return points;
   }
 
+  /*
+   * Precondition:
+   * points has been initialized
+   * 
+   * Sets points to x
+   */
   public void setPoints(double x){
     points = x;
   }

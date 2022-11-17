@@ -7,8 +7,8 @@ public class Runner
 {
   public static void main(String[] args) 
   {
-    PhraseSolver p = new PhraseSolver("Man1", "Man2"); 
-    p.play();
+    PhraseSolver p = new PhraseSolver("Man1", "Man2");  //initializes players
+    p.play();//starts
   }
 
 } 

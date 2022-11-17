@@ -13,6 +13,7 @@ public class PhraseSolver
   Board gameBoard;
   Boolean solved;
   /* your code here - constructor(s) */ 
+  //intializes players and board
   public PhraseSolver(String name1, String name2){
     gameBoard = new Board();
     Player1 = new Player(name1);
@@ -20,7 +21,7 @@ public class PhraseSolver
     solved = false;
   }
   /* your code here - accessor(s) */
-  
+
   
   /* your code here - mutator(s)  */
 

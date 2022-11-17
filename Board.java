@@ -13,25 +13,51 @@ public class Board
   private int currentLetterValue; 
 
   /* your code here - constructor(s) */ 
+  
+//constructor to initalize everything with default values
   public Board(){
-    solvedPhrase = "";
+    solvedPhrase = ""; //initializes
     phrase = loadPhrase(); 
     setLetterValue();
     System.out.println("Phrase: " + phrase); //temp test code
   }
   /* your code here - accessor(s) */
+  /*
+   * Precondition:
+   * Solvedphrase has been initialized and populated
+   * 
+   * Sends solved phrase to accesor
+   */
   public String getSolvedPhrase(){
-    return solvedPhrase;
+    return solvedPhrase; 
   }
 
+  /*
+   * Precondition:
+   * currentLetterValue has been initialized and populated
+   * 
+   * Sends solved phrase to accesor
+   */
   public int getLetterValue(){
-    return currentLetterValue;
+    return currentLetterValue; 
   }
 
+  /*
+   * Precondition:
+   * currentLetterValue has been initialized
+   * 
+   * Sends solved phrase to accesor
+   */
   public void setLetterValue(int x){
     currentLetterValue = x;
   }
 
+  /*
+   * Precondition:
+   * SolvedPhrase is intialized populated
+   * 
+   * Checks if given phrase is correct or not
+   */
   public Boolean solvePhrase(String x){
     if(x.equals(solvedPhrase)){
       return true;
